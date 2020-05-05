@@ -10,9 +10,6 @@ app.use(express.json());
 app.use(routes); 
 
 //conexão com o banco Mongo
-mongoose.connect('mongodb+srv://gabrielprog:9l19g17g@cluster0-0vkw3.mongodb.net/week10?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}); 
+require('./db') 
 
 app.listen(8000); 
